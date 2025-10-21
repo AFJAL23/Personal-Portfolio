@@ -182,39 +182,8 @@ focusing on a clean interface and a great user experience.</p>
     <p>Copyright <i class="fa-solid fa-copyright"></i> Afjal .Made with 3 day's Effort copy kiya na toh paap Lagega <i class="fa-solid fa-heart"></i></p>
 </div>
 </div>
-    <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(event, tabname) {
-        for (tablink of tablinks) {
-            tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-        document.querySelectorAll('.work img').forEach(image => {
-            image.onclick = () => {
-                document.querySelectorAll('.work img.zoomed').forEach(zoomedImage => {
-                    if (zoomedImage !== image) {
-                        zoomedImage.classList.remove('zoomed');
-                    }
-                });
-                image.classList.toggle('zoomed');
-            }
-        });
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
+    <script src="app.js">
+    
 </script>
         
 </body>
