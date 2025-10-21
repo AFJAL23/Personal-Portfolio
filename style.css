@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+body{
+    background: black;
+    color: white;   
+}
+#header{
+    width: 100%;
+    height:100vh;
+}
+h1::first-letter{
+    color: red;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+nav{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;
+}
+
+nav ul li{
+    margin: 10px 20px;
+    display: inline-block;
+    list-style: none;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: red;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav ul li a.active{
+    background-color: red;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+/*home section*/
+#home{
+    padding: 80px 0;
+    color:black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:  0 40px;
+}
+.home-col-1{
+    flex-basis: 40%;
+}
+.home-col-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    animation: float 6s ease-in-out infinite;
+}
+.home-col-2{
+    flex-basis: 55%; 
+}
+.subtitle{
+    font-size: Normal;
+    font-weight: bold;
+    color: white;
+}
+.homepage-description{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+/*about section*/
+#AboutME{
+    padding: 80px 0;
+    color:black;
+}
+.aboutme-col-1{
+    flex-basis: 40%;
+}
+.aboutme-col-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    animation: float 6s ease-in-out infinite;
+}
+.aboutme-col-2{
+    flex-basis: 55%;
+}
+.aboutme-col-2 .subtitle{
+    font-size: Normal;
+    font-weight: bold;
+    color: white;
+}
+.aboutme-description{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+.sub-titles{
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    color: white;
+}
+.tab-links::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: red;
+    transition: 0.3s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    color: white;
+}
+.tab-contents ul li span{
+    color: red;
+    font-size: bold;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+
+}
+/*---------services--------*/
+#services{
+    padding:30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+    margin:50px;
+}
+.services-list div{
+    padding: 40px;
+    font-size: normal;
+    font-weight: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s, background 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+/*portfolio*/
+#portfolio{
+    padding: 50px 0; 
+}
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.layer {
+    height: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work h3 {
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: center;
+    color: white;
+}
+
+.layer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.layer a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ff004f;
+    background: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+/*------------contact------*/
+#contact{
+    padding: 50px 0;
+}
+.contact-left{
+    flex-basis: 40%;
+}
+.contact-right{
+    flex-basis: 55%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 30px;
+
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color:#ff004f;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.sbt{
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ff004f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: normal;
+    margin-top: 20px;
+}
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   Is code ko style.css ke end mein add karein
+   ========================================= */
+
+/* Pehle, desktop par naye icons ko chhupa dein */
+nav .fa-solid {
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/* --- Tablet aur Horizontal Mobile (850px se kam) --- */
+@media (max-width: 850px) {
+
+    /* --- Navbar Handling --- */
+    nav .fa-bars {
+        display: block; /* Hamburger icon dikhao */
+    }
+
+    nav ul {
+        background: #ff004f; /* Aapka theme color */
+        position: fixed;
+        top: 0;
+        right: -200px; /* Screen ke bahar start hoga */
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s ease;
+    }
+
+    nav ul li {
+        display: block; /* Links ko vertical stack karo */
+        margin: 25px;
+    }
+
+    nav ul .fa-xmark {
+        display: block; /* 'X' icon ko menu ke andar dikhao */
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    /* --- General Column Stacking --- */
+    /* Jin sections mein 2 column the, unhe 100% width do */
+    .home-col-1,
+    .home-col-2,
+    .aboutme-col-1,
+    .aboutme-col-2,
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+    /* Stack hone par text ko center mein kar dein */
+    .home-col-2,
+    .aboutme-col-2,
+    .contact-left {
+        text-align: center;
+    }
+
+    /* Social icons ko center kar dein */
+    .social-icon {
+        text-align: center;
+    }
+
+    /* Images ke neeche margin add karein */
+    .home-col-1,
+    .aboutme-col-1 {
+        margin-bottom: 30px;
+    }
+
+    /* Contact form ko thoda margin dein */
+    .contact-right {
+        margin-top: 30px;
+    }
+
+    /* --- Portfolio (3 se 2 column) --- */
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* --- Chhote Mobile Screens (600px se kam) --- */
+@media (max-width: 600px) {
+
+    /* --- Font size adjustments --- */
+    .home-col-2 .subtitle {
+        font-size: 40px;
+    }
+    .homepage-description,
+    .aboutme-description {
+        font-size: 16px;
+    }
+
+    /* --- Portfolio (2 se 1 column) --- */
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* --- About Me Tabs ko adjust karein --- */
+    .tab-links {
+        margin-right: 25px;
+        font-size: 16px;
+    }
+
+    /* --- Copyright Text --- */
+    .copyright p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}

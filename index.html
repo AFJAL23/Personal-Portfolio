@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+       <nav>
+    <h1> Afjal</h1>
+    <ul id="sidemenu"> 
+        <li><a href="#home">Home</a></li>
+        <li><a href="#AboutME">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i> </ul>
+    <i class="fa-solid fa-bars" onclick="openmenu()"></i> </nav>
+    <!-- Home Section -->
+    <div id="home">
+        <div class="container">
+<div class="row">
+<div class="home-col-1">
+    <img src="image/homepage.png" alt="Home Image">
+</div>
+<div class="home-col-2">
+    <h1 class="subtitle">Hi, I'm Afjal</h1>
+    <p class="homepage-description">Welcome to my portfolio website.<br>I am a passionate developer with experience in creating<br> dynamic and responsive web applications.<br> Explore my work and feel free to get in touch!<br>
+</p>
+</div>
+</div>
+        </div>
+    </div>
+    <!-- End of Home Section -->
+     <div id="AboutME">
+        <div class="container">
+            <div class="row">
+                <div class="aboutme-col-1">
+                    <img src="image/Phone-Background.jpg" alt="About Me Image">
+                </div>
+                <div class="aboutme-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="aboutme-description">I am Afjal, a dedicated developer with a passion for creating innovative solutions.<br> With expertise in various programming languages and frameworks,<br> I strive to deliver high-quality projects that exceed client expectations.<br> Let's work together to bring your ideas to life!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'Education')"> Education</p>
+                    </div>
+                          <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li> <Span>Front-end</Span><br> Designing web interfaces</li>
+                            <li> <Span>Frame-work</Span><br> React, MangoDb, Node.js</li>
+                            <li> <Span>API-integration</Span><br> integrate Api's into web-app</li>
+                        </ul>
+                        </div>
+                        <div class="tab-contents"  id="Experience">
+                        <ul>
+                            <li> <Span>2025</Span><br> Intern 1 month as AI-ML Developer at AAGAZ</li>
+                            <li> <Span>2023-25</Span><br> Built 5 working Prototype Projects</li>
+                            <li> <Span>2023-25</Span><br> Built AI-Integrated Edtech Platform </li>
+                        </ul>
+                        </div>
+                        <div class="tab-contents"  id="Education">
+                        <ul>
+                            <li> <Span>2023-27</Span><br> B.tech in C.S.E From B.E.U </li>
+                            <li> <Span>2022</Span><br> Higher Secondary Education from B.S.E.B</li>
+                            <li> <Span>2020</Span><br> Secondary Education from  C.B.S.E </li>
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+     </div>
+<!------------services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2>Web-design</h2>
+                <p> Web design is one of my core skills. I build visually appealing layouts<br>
+that truly represent your brand.<br>
+My goal in every project is simplicity and functionality.</p>
+<a href="#"> learn more </a>
+            </div>
+<div>
+    <i class="fa-solid fa-crop"></i>
+    <h2> Ui/Ux design </h2>
+    <p> I design user-centric digital experiences.<br>
+My process starts with research and wireframes (UX) to solve problems,<br>
+then moves to creating beautiful and pixel-perfect interfaces (UI).</p>
+<a href="#"> learn more </a>
+</div>
+<div>
+    <i class="fa-brands fa-app-store-ios"></i>
+    <h2> App Design</h2>
+    <p> I build high-performance, intuitive mobile applications.<br>
+I create apps that run smoothly on both iOS and Android,<br>
+focusing on a clean interface and a great user experience.</p>
+<a href="#"> learn more </a>
+</div>
+        </div>
+    </div>
+</div>
+<!----------my portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    
+                    <p>The App connect you with The People around the World.</p>
+                    <a href="#"> Link <i class="fa-solid fa-link"></i></a>
+                </div>
+                <h3>
+                        Social Media App
+                    </h3>
+            </div>
+             <div class="work">
+                <img src="image/work-2.png">
+                 <div class="layer">
+                    
+                    <p>The App connect you with  Emotion and let you feel out of  the
+                        hectic- World.</p>
+                    <a href="#"> Link <i class="fa-solid fa-link"></i></a>
+                </div>
+                <h3>
+                        Music Straming App
+                    </h3>
+            </div>
+             <div class="work">
+                <img src="image/work-3.png">
+                 <div class="layer">
+                    
+                    <p>The App connect you with <br> New Trendy Fashion<br> and make you stand-out in traditional-wearing  World.</p>
+                    <a href="#"> Link <i class="fa-solid fa-link"></i></a>
+                </div>
+                <h3>
+                        E-Commerce  App
+                    </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!------contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <H1 class="sub-title">Contact Me</H1>
+                <p> <i class="fa-solid fa-envelope"></i>afjalislam33@mail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9525******</p>
+                <div class="social-icon">
+<a href="#"> <i class="fa-brands fa-facebook"></i></a>
+<a href="#"> <i class="fa-brands fa-square-x-twitter"></i>
+<a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+<a href="">  <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            
+            </div>
+             <div class="contact-right">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="abc@gmail.com" required>
+                    <textarea name="Message" rows="6" placeholder="Hello sir"></textarea>
+                    <input type="number" placeholder="9999999999" required>
+                    <button type="submit" class="sbt"> Submit</button>
+                </form>
+             </div>
+        </div>
+    </div>
+<div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Afjal .Made with 3 day's Effort copy kiya na toh paap Lagega <i class="fa-solid fa-heart"></i></p>
+</div>
+</div>
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(event, tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        document.querySelectorAll('.work img').forEach(image => {
+            image.onclick = () => {
+                document.querySelectorAll('.work img.zoomed').forEach(zoomedImage => {
+                    if (zoomedImage !== image) {
+                        zoomedImage.classList.remove('zoomed');
+                    }
+                });
+                image.classList.toggle('zoomed');
+            }
+        });
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+        
+</body>
+</html>
